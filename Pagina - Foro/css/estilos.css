@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-
+*{
+    list-style-type: none;
+}
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -158,19 +160,28 @@ nav {
     box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
 }
 
+.omg {
+
+    font: 14px arial;
+}
+
+.omg {
+    size: 406px 65px;
+    background: #1d273b;
+    margin: 0px 22px 0px 23px;
+}
+
 .nav-i {
     margin: 28px 0 0 0;
-    width: 230px;
+    width: 55px;
     display: inline-block;
-    background: #092eff;
+    background: #00266d;
     text-align: center;
     color: rgb(255, 255, 255);
     padding: 12px 0;
     text-decoration: none;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 14px;
     border-radius: 5px;
-    box-shadow: 0 8px 32px rgba(170, 119, 228, 0.46);
+    box-shadow: 0 8px 32px rgb(119, 0, 255);
 }
-
