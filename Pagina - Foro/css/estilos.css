@@ -7,8 +7,10 @@
 *{
     list-style-type: none;
 }
+
+/*tipo de letra*/
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, Verdana;
 }
 
 h1,
@@ -17,10 +19,132 @@ h3,
 h4,
 h5,
 h6 {
-    color: #1d273b;/*color del titulos*/
+    color: #000000;/*color de los titulos*/
     font-weight: 300;
 }
 
+/*el baner de Catsocial*/
+.catsocial {
+    width: 100%;
+    background:#000000;
+    height: 80px;
+    border-bottom: 1px solid rgba(46, 148, 239);;
+    box-shadow: 1px 1px 10px 0 rgb(255, 0, 106);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: ease-in-out 0.5s;
+    
+}
+
+.nombre h1 {
+    color: #ffffff;    
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    padding: 0 40px;
+    font-family: 'Comic Sans MS', arial;
+    position: absolute;
+}
+
+.michi img{
+    margin: 28px 0 0 0;
+    display: inline-block;
+    position: absolute;
+    right: 200px;
+    width: 70px;
+    height: 70px; 
+    padding: 0;
+    align-items: top;
+}
+
+.nav {
+    padding: 0 10px;
+}
+
+.contenido-header>img {
+    width: 200px;
+}
+
+/*referencias*/
+
+/*ul {
+    width: 100%;
+    height: 80px;
+    background:#000000;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(46, 148, 239);
+    position: static;
+    top: 0;
+    z-index: 100;
+    transition: ease-in-out 0.5s;
+}
+
+.omg {
+
+    font: 14px arial;
+}
+
+.omg {
+    size: 406px 65px;
+    background: #1d273b;
+    margin: 0px 22px 0px 23px;
+}
+
+.nav-i {
+    margin: 28px 0 0 0;
+    display: inline-block;
+    background: #0059ff;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    box-shadow: 0 8px 32px rgb(119, 0, 255);
+    position: absolute;
+    right: 550px;
+    width: 100px;
+    border: 3px solid #000000;
+    padding: 10px;
+}
+
+.nav-t {
+    margin: 28px 0 0 0;
+    display: inline-block;
+    background: #0059ff;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    box-shadow: 0 8px 32px rgb(119, 0, 255);
+    position: absolute;
+    right: 350px;
+    width: 100px;
+    border: 3px solid #000000;
+    padding: 10px;
+}
+
+.nav-a {
+    margin: 28px 0 0 0;
+    display: inline-block;
+    background: #0059ff;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    box-shadow: 0 8px 32px rgb(119, 0, 255);
+    position: absolute;
+    right: 450px;
+    width: 100px;
+    border: 3px solid #000000;
+    padding: 10px;
+}
+*/
+/*caracteristicas de la primera division (titulo de catsocial, letras y imagen)*/
 .contenedor {
     width: 90%;
     max-width: 1000px;
@@ -29,33 +153,24 @@ h6 {
     color: #000000;
 }
 
-
-.contenedor1 {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-    padding: 60px 0;
-}
-
-
+/*tamaño del titulo*/
 h1 {
     font-size: 50px;
 }
 
 
-/* Header */
+/* este es el espacio que hay entre la primera division y el header, pruebe aumentar el "margin botton" para que lo entienda mejor*/
 header::before {
     content: "";
     display: block;
     margin-bottom: 80px;
 }
 
-/*baner - parte de arriba*/
+/*Opciones del nav (referencias)*/
 nav {
     width: 100%;
     height: 80px;
-    background:#000000;
+    background:#ffffff;
     border-bottom: 1px solid transparent;
     box-shadow: 1px 1px 10px 0 rgba(46, 148, 239);
     position: fixed;
@@ -74,7 +189,7 @@ nav {
 }
 
 .nav .logo {
-    height: 80px;
+    height: 70px;
 
 }
 
@@ -159,79 +274,3 @@ nav {
     border-radius: 5px;
     box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
 }
-
-ul {
-    width: 100%;
-    height: 80px;
-    background:#000000;
-    border-bottom: 1px solid transparent;
-    box-shadow: 1px 1px 10px 0 rgba(46, 148, 239);
-    position: static;
-    top: 0;
-    z-index: 100;
-    transition: ease-in-out 0.5s;
-}
-
-.omg {
-
-    font: 14px arial;
-}
-
-.omg {
-    size: 406px 65px;
-    background: #1d273b;
-    margin: 0px 22px 0px 23px;
-}
-
-.nav-i {
-    margin: 28px 0 0 0;
-    display: inline-block;
-    background: #0059ff;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-weight: 400;
-    text-transform: uppercase;
-    box-shadow: 0 8px 32px rgb(119, 0, 255);
-    position: absolute;
-    right: 550px;
-    width: 100px;
-    border: 3px solid #000000;
-    padding: 10px;
-}
-
-.nav-t {
-    margin: 28px 0 0 0;
-    display: inline-block;
-    background: #0059ff;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-weight: 400;
-    text-transform: uppercase;
-    box-shadow: 0 8px 32px rgb(119, 0, 255);
-    position: absolute;
-    right: 350px;
-    width: 100px;
-    border: 3px solid #000000;
-    padding: 10px;
-}
-
-.nav-a {
-    margin: 28px 0 0 0;
-    display: inline-block;
-    background: #0059ff;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-weight: 400;
-    text-transform: uppercase;
-    box-shadow: 0 8px 32px rgb(119, 0, 255);
-    position: absolute;
-    right: 450px;
-    width: 100px;
-    border: 3px solid #000000;
-    padding: 10px;
-}
-
-
