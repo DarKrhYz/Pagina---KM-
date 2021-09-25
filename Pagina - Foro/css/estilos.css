@@ -166,7 +166,7 @@ ul {
     background:#000000;
     border-bottom: 1px solid transparent;
     box-shadow: 1px 1px 10px 0 rgba(46, 148, 239);
-    position: relative;
+    position: static;
     top: 0;
     z-index: 100;
     transition: ease-in-out 0.5s;
