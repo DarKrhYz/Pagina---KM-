@@ -9,15 +9,17 @@
     text-decoration: none;
 }
 
+/*de la linea 12 hasta la 83 es todo lo de el nav de computador*/
 .pagina {
     width: 100%;
-    max-width: 1010px;
+    max-width: 1000px;
     margin: auto;
     overflow: hidden;
+
 }
 
 body {
-    background: #292929;
+    background: #ffffff;
     font-family: 'monaco', 'Consolas', "Lucida Console", monospace;
 }
 
@@ -32,11 +34,13 @@ header {
     clear: both;
     content: "";
     display: table;
+    box-shadow: 1px 1px 10px 0 rgb(255, 28, 28);
 }
 
 .menu {
     width: 900px;
     margin: 0 auto;
+   
 }
 
 img {
@@ -78,6 +82,7 @@ nav ul li a:hover::before {
     width: 100%;
 }
 
+/*de aqui en adelante es un reguero de codigo que organizare mas adelante*/
 
 .hamburguesa {
     position: relative;
@@ -115,6 +120,7 @@ nav ul li a:hover::before {
     opacity: 0;
 }
 
+        
 .mobile-nav {
     position: relative;
     top: 0;
@@ -123,14 +129,12 @@ nav ul li a:hover::before {
     min-height: 100vh;    
     display: none;
     z-index: 50;
-    background-color: #757575;
+    background-color: #ffb8b82f;
     padding-top: 120px;
     transition: 0.4s;
 }
+        
 
-.mobile-nav.is-active {
-    left: 0;
-}
 
 .mobile-nav a {
     display: block;
@@ -138,21 +142,26 @@ nav ul li a:hover::before {
     max-width: 200px;
     margin: 0 auto 16px;
     border-radius: 20px;
+    border: 2px solid #ff6600;
     text-align: center;
     padding: 12px 16px;
     background-color: rgb(0, 0, 0);
-    
-    color: rgb(255, 255, 255);
+            
+     color: rgb(255, 255, 255);
 }
 
-.mobile-nav a:hover {
-    background-color: #414141;
+.mobile-nav.is-active {
+    left: 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 870px) {
     .mobile-nav {
         display: block;
 
+    }
+
+    ul li a {
+        display: none;
     }
 
     .hamburguesa {
@@ -160,6 +169,7 @@ nav ul li a:hover::before {
         right: 30px;
         top: 7px;
         display: block;
-
     }
 }
+
+/*color de botones al poner el mouse sobre ellos*/
