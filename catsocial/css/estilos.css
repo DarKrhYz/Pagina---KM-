@@ -9,6 +9,11 @@
     text-decoration: none;
 }
 
+*,
+*:before,
+*::after {
+  box-sizing: border-box;
+}
 /*de la linea 12 hasta la 83 es todo lo de el nav de computador*/
 .pagina {
     width: 100%;
@@ -19,7 +24,7 @@
 }
 
 body {
-    background: #000000;
+    background: #5a5a5a;
     font-family: 'monaco', 'Consolas', "Lucida Console", monospace;
 }
 
@@ -34,7 +39,7 @@ header {
     clear: both;
     content: "";
     display: table;
-    box-shadow: 1px 1px 10px 0 rgb(255, 28, 28);
+    box-shadow: 1px 1px 10px 0 rgb(0, 38, 255);
 }
 
 .menu {
@@ -128,25 +133,51 @@ nav ul li a:hover::before {
     min-height: 100vh;    
     display: none;
     z-index: 50;
-    background-color: #ffb8b82f;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 255) 80%, rgb(255, 0, 0));
     padding-top: 120px;
     transition: 0.4s;
 }
         
-
-
 .mobile-nav a {
+    position: relative;
     display: block;
-    width: 100%;
+    width: 70%;
     max-width: 200px;
-    margin: 0 auto 16px;
-    border-radius: 20px;
-    border: 2px solid #ff6600;
+    margin: 0 auto 2px;
+    border-radius: 15px;
+    font-weight: 700;
+    transition: all 500ms ease;
+    border: 2px inset #dd0000d5;
     text-align: center;
     padding: 12px 16px;
-    background-color: rgb(0, 0, 0);
-            
-     color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);       
+    color: rgb(255, 255, 255);
+}
+
+/*animacion de botones*/
+
+/*
+.mobile-nav a:hover {
+    background-color: #20e2d7;
+    box-shadow: 0 0 10px #20e2d7, 0 0 20px #20e2d7, 0 0 20px #20e2d7;
+    color: #434343;
+}
+*/
+
+.mobile-nav a:hover {
+    animation: shadow-pulse 1000ms 1;
+    background-color: #e22020;
+    color: #434343;
+}
+
+
+@keyframes shadow-pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgb(255, 0, 0);
+    }
+    100% {
+      box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
+    }
 }
 
 .mobile-nav.is-active {
