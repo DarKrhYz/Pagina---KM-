@@ -15,11 +15,11 @@
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
-
+    box-shadow: 1px 1px 10px 0 rgb(255, 28, 28);
 }
 
 body {
-    background: #ffffff;
+    background: #000000;
     font-family: 'monaco', 'Consolas', "Lucida Console", monospace;
 }
 
@@ -29,7 +29,7 @@ h1 {
 }
 
 header {
-    background: #ffffff;
+    background-image: url(https://cdn.discordapp.com/attachments/863945216195821579/891897060238975056/banerp.png);
     width: 100%;
     clear: both;
     content: "";
@@ -40,7 +40,6 @@ header {
 .menu {
     width: 900px;
     margin: 0 auto;
-   
 }
 
 img {
