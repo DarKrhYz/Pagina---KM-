@@ -14,17 +14,19 @@
 *::after {
   box-sizing: border-box;
 }
+
 /*de la linea 12 hasta la 83 es todo lo de el nav de computador*/
-.pagina {
+.headerCS {
     width: 100%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
-    box-shadow: 1px 1px 10px 0 rgb(255, 28, 28);
+    box-shadow: 1px 1px 10px 0 rgb(255, 0, 98);
+    border-radius: 5px;
 }
 
 body {
-    background: #5a5a5a;
+    background: #141414;
     font-family: 'monaco', 'Consolas', "Lucida Console", monospace;
 }
 
@@ -34,17 +36,21 @@ h1 {
 }
 
 header {
-    background-image: url(https://cdn.discordapp.com/attachments/863945216195821579/891897060238975056/banerp.png);
+    background: linear-gradient(45deg, red, blue);
+    background-size: 1000px 60px;
     width: 100%;
     clear: both;
     content: "";
     display: table;
-    box-shadow: 1px 1px 10px 0 rgb(0, 38, 255);
+    position: relative;
+    height: 60px;
 }
 
-.menu {
-    width: 900px;
+.logo {
+    width: 950px;/*izquierda y derecha*/
+    padding: 5px;
     margin: 0 auto;
+    margin-right: 30px;
 }
 
 img {
@@ -52,41 +58,95 @@ img {
     height: 50px;
     float: left;
     padding: 8px;
+    cursor: pointer;
 }
 
-nav {
-    float: right;
+/*Buscador de Catsocial */
+
+.buscador {
+    display: absolute;
+    justify-content: left;
+    background: transparent;
+    margin-left: 26%;
+    
 }
 
-nav ul li {
-    list-style: none;
-    margin-left: 20px;
-    padding: 12px 0;
-    float: left;
-    position: relative;
-}
-
-nav ul li a {
-    color: rgb(0,0,0);
-    font-weight: bold;
-}
-
-nav ul li a::before {
-    display: block;
-    content: "";
-    width: 0%;
-    background: rgb(0, 0, 0);
-    height: 5px;
-    top: 0;
+.buscar {
     position: absolute;
-    transition: width 0.5s;
+    padding: 5px;
 }
 
-nav ul li a:hover::before {
-    width: 100%;
+.buscar input{
+    width: 380px;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+    border: 1px solid rgb(0, 4, 255);
+    border-radius: 30px;
+    transition: all 0.6s ease;
+    font-family: 'monaco', 'Consolas', "Lucida Console", monospace;
+    font-weight: bold;
+    background: linear-gradient(45deg, rgb(255, 255, 255), rgb(255, 225, 225));
 }
 
-/*de aqui en adelante es un reguero de codigo que organizare mas adelante*/
+.btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(45deg, rgb(0, 0, 0), blue);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*
+.buscar:hover input {
+    width: 240px;
+}
+
+.buscar input:focus {
+    width: 240px;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 .hamburguesa {
     position: relative;
@@ -154,7 +214,7 @@ nav ul li a:hover::before {
     color: rgb(255, 255, 255);
 }
 
-/*animacion de botones*/
+
 
 /*
 .mobile-nav a:hover {
@@ -162,7 +222,7 @@ nav ul li a:hover::before {
     box-shadow: 0 0 10px #20e2d7, 0 0 20px #20e2d7, 0 0 20px #20e2d7;
     color: #434343;
 }
-*/
+
 
 .mobile-nav a:hover {
     animation: shadow-pulse 1000ms 1;
