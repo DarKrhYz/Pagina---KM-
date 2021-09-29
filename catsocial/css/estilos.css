@@ -17,8 +17,8 @@
 
 /*de la linea 12 hasta la 83 es todo lo de el nav de computador*/
 .headerCS {
-    width: 100%;
-    max-width: 1000px;
+    width: 97%;
+    max-width: 1050px;
     margin: auto;
     overflow: hidden;
     box-shadow: 1px 1px 10px 0 rgb(255, 0, 98);
@@ -37,7 +37,7 @@ h1 {
 
 header {
     background: linear-gradient(45deg, red, blue);
-    background-size: 1000px 60px;
+    background-size: 1050px 60px;
     width: 100%;
     clear: both;
     content: "";
@@ -67,7 +67,7 @@ img {
     display: absolute;
     justify-content: left;
     background: transparent;
-    margin-left: 26%;
+    margin-left: 37%;
     
 }
 
@@ -77,14 +77,14 @@ img {
 }
 
 .buscar input{
-    width: 380px;
+    width: 230px;
     height: 30px;
     padding: 0 10px;
-    font-size: 18px;
+    font-size: 15px;
     color: #000;
     outline: none;
-    border: 1px solid rgb(0, 4, 255);
-    border-radius: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
     transition: all 0.6s ease;
     font-family: 'monaco', 'Consolas', "Lucida Console", monospace;
     font-weight: bold;
@@ -95,7 +95,7 @@ img {
     position: absolute;
     top: 0;
     right: 0;
-    background: linear-gradient(45deg, rgb(0, 0, 0), blue);
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(71, 71, 71));
     width: 40px;
     height: 40px;
     line-height: 40px;
