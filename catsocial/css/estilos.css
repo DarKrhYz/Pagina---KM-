@@ -17,7 +17,7 @@
 
 /*de la linea 12 hasta la 83 es todo lo de el nav de computador*/
 .headerCS {
-    width: 100%;
+    width: 99.5%;
     max-width: 1700px;
     margin: auto;
     overflow: hidden;
@@ -47,14 +47,14 @@ header {
 }
 
 .logo {
-    width: 1500px;/*izquierda y derecha*/
+    width: 97%;/*izquierda y derecha*/
     padding: 5px;
     margin: 0 auto;
     margin-right: 30px;
 }
 
 img {
-    width: 150px;
+    width: 200px;
     height: 50px;
     float: left;
     padding: 8px;
@@ -73,19 +73,19 @@ img {
 
 .buscar {
     position: absolute;
-    padding: 5px;
-    
+    padding: 3px;
+    right: 37%;
 }
 
 .buscar input{
     width: 380px;
-    height: 30px;
+    height: 35px;
     padding: 0 10px;
     font-size: 18px;
-    color: #000;
+    color: rgb(255, 255, 255);
     outline: none;
     border: 1px solid rgb(0, 0, 0);
-    border-radius: 30px;
+    border-radius: 20px;
     transition: all 0.6s ease;
     font-family: 'monaco', 'Consolas', "Lucida Console", monospace;
     font-weight: bold;
@@ -105,6 +105,7 @@ img {
     font-size: 20px;
     border-radius: 50%;
     cursor: pointer;
+    border: 1px solid rgb(129, 129, 129);
 }
 
 /*
@@ -120,9 +121,9 @@ img {
     color: white;
 }
 
-
-
-
+::placeholder {
+    color: rgb(199, 199, 199);
+}
 
 
 
