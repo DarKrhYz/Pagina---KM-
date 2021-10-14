@@ -18,7 +18,7 @@
 /*de la linea 12 hasta la 83 es todo lo de el nav de computador*/
 .headerCS {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1700px;
     margin: auto;
     overflow: hidden;
     box-shadow: 1px 1px 10px 0 rgb(255, 0, 98);
@@ -36,7 +36,7 @@ h1 {
 }
 
 header {
-    background: linear-gradient(45deg, red, blue);
+    background: linear-gradient(45deg, rgb(17, 17, 17), rgb(17, 17, 17));
     background-size: 1000px 60px;
     width: 100%;
     clear: both;
@@ -47,14 +47,14 @@ header {
 }
 
 .logo {
-    width: 950px;/*izquierda y derecha*/
+    width: 1500px;/*izquierda y derecha*/
     padding: 5px;
     margin: 0 auto;
     margin-right: 30px;
 }
 
 img {
-    width: 200px;
+    width: 150px;
     height: 50px;
     float: left;
     padding: 8px;
@@ -66,7 +66,7 @@ img {
 .buscador {
     display: absolute;
     justify-content: left;
-    background: transparent;
+    background:transparent;
     margin-left: 26%;
     
 }
@@ -74,6 +74,7 @@ img {
 .buscar {
     position: absolute;
     padding: 5px;
+    
 }
 
 .buscar input{
@@ -83,24 +84,24 @@ img {
     font-size: 18px;
     color: #000;
     outline: none;
-    border: 1px solid rgb(0, 4, 255);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 30px;
     transition: all 0.6s ease;
     font-family: 'monaco', 'Consolas', "Lucida Console", monospace;
     font-weight: bold;
-    background: linear-gradient(45deg, rgb(255, 255, 255), rgb(255, 225, 225));
+    background: linear-gradient(45deg, rgb(36, 36, 36), rgb(36, 36, 36));
 }
 
 .btn{
     position: absolute;
     top: 0;
     right: 0;
-    background: linear-gradient(45deg, rgb(0, 0, 0), blue);
+    background: linear-gradient(45deg, rgb(17, 17, 17), rgb(17, 17, 17));
     width: 40px;
     height: 40px;
     line-height: 40px;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     border-radius: 50%;
     cursor: pointer;
@@ -115,6 +116,9 @@ img {
     width: 240px;
 }
 */
+.Formulario, h1{
+    color: white;
+}
 
 
 
