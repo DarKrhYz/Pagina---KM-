@@ -28,7 +28,8 @@ nav {
     border-radius: 10px;
     background-image: url(https://cdn.discordapp.com/attachments/863945216195821579/892142729692348566/menu.png);
     background-size: 1000px 40px ;
-    box-shadow: 5px 5px 5px 5px rgb(0, 255, 128);  
+    box-shadow: 5px 5px 5px 5px rgb(0, 255, 128);
+    font-family: 'monaco', 'Consolas', "Lucida Console", monospace;  
 }
 
 nav ul {
