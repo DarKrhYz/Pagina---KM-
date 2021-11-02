@@ -17,7 +17,7 @@
 
 /*de la linea 12 hasta la 83 es todo lo de el nav de computador*/
 .headerCS {
-    width: 99.5%;
+    width: 100%;
     max-width: 1700px;
     margin: auto;
     overflow: hidden;
@@ -26,7 +26,8 @@
 }
 
 body {
-    background: #525252;
+    background-image: url(https://cdn.discordapp.com/attachments/863945216195821579/899069461406056518/background.jpg);
+    background-size: 100%;
     font-family: 'monaco', 'Consolas', "Lucida Console", monospace;
 }
 
@@ -156,6 +157,46 @@ button:hover {
       box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
     }
 }
+.derechos{
+    position: fixed;
+    top: 97.5%;
+    background-color: #000;
+    width: 100%;
+    
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    box-shadow: 1px 1px 10px 0 rgb(255, 0, 98);
+}
+.fondo, .texto{
+    position: fixed;
+    top: 40%;
+    left: 25%;
+    right: 25%;
+    font-size: 60px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.subtexto {
+    position: fixed;
+    top: 55%;
+    left: 27%;
+    right: 27%;
+    font-size: 20px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.textofinal{
+    position: fixed;
+    top: 65%;
+    left: 37%;
+    font-size: 25px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
 
 
 
