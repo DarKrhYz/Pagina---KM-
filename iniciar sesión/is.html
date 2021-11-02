@@ -20,15 +20,24 @@
     </head>
 
     <body>
-        <div class="cuatro">
-            <section class="login">
-                <h1>Usuario:</h1>
-                    <input type="text" id="usuario"><br>
-                <h1>Correo:</h1>
-                    <input type="text" id="mail"><br>
-                <h1>Contraseña:</h1>
-                    <input type="password" id="contra"><br>
-            </section>
+        <div class="login-box">
+            <img src="img/logo1.png" class="avatar" alt="Logo de Cat">
+            <h1>Inicio de sesión</h1>
+            <form>
+                <!--USERNAME-->
+                <label for="username">Nombre de usuario</label>
+                <input type="text" placeholder="Escribe tu apodo o correo">
+                
+                <!--PASSWORD-->
+                <label for="password">Constraseña</label>
+                <input type="password" placeholder="Escribe tu contraseña">
+
+                <input type="submit" value="Iniciar Sesión">
+
+                <a href="#">Olvidaste tu contraseña?</a>
+                <a href="#">No tienes una cuenta?</a>
+
+            </form>            
         </div>
     </body>
 </html>    
