@@ -61,23 +61,50 @@ body {
     color: #fff;
     font-size: 16px;
 }
-  
-.login-box input[type="submit"] {
-    border: none;
-    outline: none;
+
+.login-box .Entrar {
+    display: inline-flex;
+    width: 100%;
     height: 40px;
-    background: #a30f59;
+    background: rgb(27, 77, 243);
     color: #fff;
     font-size: 20px;
-    border-radius: 20px;
-}
-  
-.login-box input[type="submit"]:hover {
+    font-weight: bold;
+    border: none;
     cursor: pointer;
-    background: #075eff;
-    color: #000;
+    transition: .3s ease all;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    margin: 13px 0;
 }
-  
+
+.login-box .Entrar span {
+    position: absolute;
+    z-index: 2;
+    transition: .3s ease all;
+    top: 15%;
+    left: 20%;
+}
+
+.login-box .Entrar::after {
+    content: "";
+    width: 100%;
+    height: 300px;
+    background: rgb(218, 17, 127);
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    left: 0;
+    transition: .4s ease-in-out all;    
+    border-radius: 300px 300px 0px 0px;
+}
+
+.login-box .Entrar:hover::after {
+    top: -130px;
+}
+
 .login-box a {
     text-decoration: none;
     font-size: 12px;
@@ -85,6 +112,6 @@ body {
     color: darkgrey;
 }
   
-  .login-box a:hover {
+.login-box a:hover {
     color: #fff;
 }
