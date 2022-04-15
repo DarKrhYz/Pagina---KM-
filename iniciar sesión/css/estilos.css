@@ -9,10 +9,24 @@ body {
     background-size: cover;
     font-family: 'monaco', 'Consolas', "Lucida Console", monospace;
     height: 100vh;
-  }
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(39, 39, 39);    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
+}
 
 .login-box {
-    width: 320px;
+    width: 350px;
     height: 420px;
     background: #000;
     color: #fff;
@@ -22,6 +36,7 @@ body {
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: 70px 30px;
+    border-radius: 10px;
 }
   
 .login-box .avatar {
@@ -123,8 +138,7 @@ footer{
     background: #202020;
     color: white;
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    bottom: -40px;
     height: 40px;
 }
 
